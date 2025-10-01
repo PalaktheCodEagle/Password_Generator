@@ -25,7 +25,7 @@ It allows users to create strong and customizable passwords of their choice.
 
 ## Tech Stack
 
-Java SE (Core Java)
+Java
 
 
 ## Run Locally
