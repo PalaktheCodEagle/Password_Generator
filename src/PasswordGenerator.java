@@ -19,6 +19,11 @@ public class PasswordGenerator {
         System.out.print("Enter password length: ");
         int length = sc.nextInt();
 
+        if(length < 8){
+            System.out.println("Password length can't be less than 8 characters!!");
+            System.exit(0);
+        }
+
         System.out.println("Choose an option: ");
         System.out.println("1. System Generated Password.");
         System.out.println("2. Customised Password.");
@@ -26,10 +31,7 @@ public class PasswordGenerator {
         int passChoice = sc.nextInt();
         sc.nextLine();
 
-        if(length < 8){
-            System.out.println("Password length can't be less than 8 characters!!");
-        }
-        else if(length >= 8 && passChoice == 1){
+        if(length >= 8 && passChoice == 1){
 
                 characterSet += letters;
                 characterSet += digits;
